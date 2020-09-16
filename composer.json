@@ -1,0 +1,47 @@
+{
+    "name": "indrayoga/bsbladecomponents",
+    "description": "collection of blade components based of bootstrap",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Indra Yoga Permana",
+            "email": "indrayogapermana@gmail.com",
+            "homepage": "https://github.com/indrayoga"
+        }
+    ],
+    "homepage": "https://github.com/indrayoga/bs-blade-components",
+    "keywords": [
+        "Laravel",
+        "bootstrap",
+        "blade components"
+    ],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0|~9.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4|~5|~6",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "indrayoga\\BsBladeComponents\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "indrayoga\\BsBladeComponents\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "indrayoga\\BsBladeComponents\\BsBladeComponentsServiceProvider"
+            ],
+            "aliases": {
+                "BsBladeComponents": "indrayoga\\BsBladeComponents\\Facades\\BsBladeComponents"
+            }
+        }
+    }
+}
